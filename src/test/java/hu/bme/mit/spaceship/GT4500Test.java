@@ -37,7 +37,7 @@ public class GT4500Test {
     when(mock1.fire(1)).thenReturn(true);
     when(mock2.fire(1)).thenReturn(true);
     // Act
-    boolean result = ship.fireTorpedo(FiringMode.ALL);
+    ship.fireTorpedo(FiringMode.ALL);
 
     // Assert
     verify(mock1, times(1)).fire(1);
